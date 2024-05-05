@@ -9,6 +9,9 @@ openssl = use_extension("//openssl:extensions.bzl", "openssl_extensions")
 use_repo(openssl, "openssl")
 use_repo(openssl, "nasm")
 
+ncurses = use_extension("//ncurses:extensions.bzl", "ncurses_extensions")
+use_repo(ncurses, "ncurses")
+
 zig_toolchains = use_extension("@hermetic_cc_toolchain//toolchain:ext.bzl", "toolchains")
 use_repo(zig_toolchains, "zig_sdk")
 
